@@ -1,7 +1,7 @@
 
-# RST (Radically Simplified Transfer)
+# rst (radically simplified transfer)
 
-RST is an ultra-compressed REST-like protocol designed for environments with extreme constraints on bandwidth, power, and reliability. Its primary goal is to reduce data transfer and processing overhead by utilizing bit-packed commands and responses. This makes RST suitable for edge computing, low-power IoT devices, disaster recovery networks, and deep space communications.
+rst is an experimental ultra-compressed version of REST protocol designed for environments with extreme constraints on bandwidth, power, and reliability. Its primary goal is to reduce data transfer and processing overhead by utilizing bit-packed commands and responses. This makes rst suitable for edge computing, low-power IoT devices, disaster recovery networks, and deep space communications.
 
 ## Features
 
@@ -19,12 +19,12 @@ RST is an ultra-compressed REST-like protocol designed for environments with ext
 
 ## Proof of Concept: Booking a Hotel on Mars
 
-To showcase the RST protocol in action, the Proof of Concept (PoC) involves a task: searching for hotels and retrieving results.
+To showcase the rst protocol in action, the Proof of Concept (PoC) involves a task: searching for hotels and retrieving results.
 
 ### Compression Comparison
 
 - **Uncompressed Size (JSON):** ~350 bytes
-- **Compressed Size (bit-packed RST):** ~10 bytes
+- **Compressed Size (bit-packed rst):** ~10 bytes
 - **Compression Ratio:** 97%
 
 ### Example Features in the PoC
@@ -35,7 +35,7 @@ To showcase the RST protocol in action, the Proof of Concept (PoC) involves a ta
 
 ## How It Works
 
-The RST protocol operates by utilizing lookup tables for various fields, such as price, ratings, and amenities. This allows for aggressive compression, as each field is mapped to a binary representation and packed into as few bits as possible. Commands are sent using minimalistic headers and payloads, and the server unpacks and processes the bit-packed data.
+The rst protocol operates by utilizing lookup tables for various fields, such as price, ratings, and amenities. This allows for aggressive compression, as each field is mapped to a binary representation and packed into as few bits as possible. Commands are sent using minimalistic headers and payloads, and the server unpacks and processes the bit-packed data.
 
 ### Server Architecture
 
